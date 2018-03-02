@@ -1,0 +1,511 @@
+
+
+.col-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+hr {
+height: 2px;
+color: #123455;
+background-color: #123455;
+border: none;
+width: 90%;
+
+}
+
+/*___________________Header_____________________*/
+
+#header h1{
+
+	font-size: 40px;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-weight: bold;
+	text-align: center;
+	background: lightgrey;
+	/*background-image: url("food.gif");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0 70px 0;*/
+	color: black;
+	margin: 0;
+	padding: 10px 0 10px 0;
+}
+
+
+
+
+
+/*_________________FirstText_________________*/
+
+#firstText h2{
+	font-size: 20px;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	text-align: center;
+	margin: 50px;
+}
+#createNewDinnerBtn {
+ 	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+ 	font-size: 20px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+	margin-top: 20px;
+ }
+
+
+
+
+
+/*___________________SidebarView________________*/
+
+#sidebarView { 
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	padding: 0% 0% 20% 0%;
+	margin: 120px 0px 0px 10px;
+
+
+	
+}
+#sidebarView h2 {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 30px;
+	text-align: center;
+	margin: 10px 40px 10px 40px;
+
+}
+#sidebarView text {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 18px;
+	padding-left: 10px;
+
+}
+#sidebarView input {
+	width: 20%;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+#sidebarView table{
+	background-color: lightgrey;
+	margin-top: 20px;
+	padding-top: 100px;
+	width: 100%;
+
+}
+#sidebarView td{
+	padding:0px 0px 0px 10px;
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 20px; 
+}
+#sidebarView p{
+	color: #A52A2A;
+	text-align: left;
+	padding: 20px;
+	padding-top: 10px;
+	margin-top: 10px;
+	
+
+}
+#sidebarView button {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 20px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+	margin:auto;
+  	display: block;
+  	padding: 5px 10px 5px 10px;
+
+}
+
+#pendingMenu {
+	margin:0;
+	padding:0;
+}
+#pendingDishes {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	border: 0px solid black;
+	background-color: #e6e6e6;
+	color: black;
+	margin:5px 10px 0px 10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:0px;
+}
+#pendingPrice {
+	margin:5px 10px 15px 10px;
+	padding-left:0px;
+	color: #A52A2A;
+}
+#SEK {
+	text-align:right;
+}
+
+#sidebarRight {
+	float: right;
+}
+
+
+
+
+
+/*____________________FindDish______________________*/
+
+#findDish input {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+
+}	
+
+#findDish select {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 18px;
+	border: 1px solid black;
+	border-radius: 2px;
+	color: black;
+
+}
+
+#findDish {
+	padding-bottom: 10px;
+	width: 80%;
+}
+
+#findDish h2 {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 30px;
+
+}
+
+#findDish button {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 17px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+	padding: 0px 10px 0px 10px;
+}
+
+
+
+
+/*____________________ChooseDish_____________________*/
+
+#chooseDish {
+	padding: 10px 25px 0px 25px;
+	width: 80%;
+
+}
+.grid-item {
+	padding: 5px;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 25%;
+    float:left;
+
+}
+.grid-item h4 {
+	color: #A52A2A;
+	text-align: right;	
+}
+#chooseDish img, #dinnerView img{
+	border: 1px solid grey;
+	width: 100%;
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+
+	
+}
+#chooseDish text, #dinnerView text{
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	border-bottom: 1px solid grey;
+	border-top: 0px;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	text-align: center;
+	display: block;
+	background: white;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+/*
+#row2 {
+	-moz-column-count: 6;
+    -webkit-column-count: 6;
+    column-count: 6;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+}
+*/
+
+
+
+
+/*______________________DishView_____________________*/
+
+#addtoMenubtn {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+	margin-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 20px;
+}
+ #createNewDinnerBtn {
+ 	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+	margin-top: 20px;
+}
+#backtoSearchbtn {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+}
+#ingredients {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	float: right;
+	background-color: #ffeb99;
+	margin: 20px 0px 0px 0px;
+	border: 1px solid black;
+	width: 50%;
+	padding: 0px 0px 20px 0px;
+}
+#dishView a{
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	position: relative;
+	background: orange;
+	border: 1px solid black;
+	color: black;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top: 20px;
+	float: right;
+}
+#dishView a:after, #dishView a:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+#dishView a:after {
+	border-color: rgba(213, 130, 47, 0);
+	border-right-color: orange;
+	border-width: 20px;
+	margin-top: -20px;
+}
+#dishView a:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: #000000;
+	border-width: 23px;
+	margin-top: -23px;
+}
+
+
+
+
+
+/*_________________MyDinnerPeople___________*/
+
+#myDinnerPeople {
+	padding: 20px;
+}
+#myDinnerPeople text {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+}
+#myDinnerPeople button {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+}
+#myDinnerPeople a{
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	position: relative;
+	background: orange;
+	border: 1px solid black;
+	color: black;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	float: right;
+}
+#myDinnerPeople a:after, #myDinnerPeople a:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+#myDinnerPeople a:after {
+	border-color: rgba(213, 130, 47, 0);
+	border-right-color: orange;
+	border-width: 20px;
+	margin-top: -20px;
+}
+#myDinnerPeople a:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: #000000;
+	border-width: 23px;
+	margin-top: -23px;
+}
+
+
+
+
+
+
+
+
+/*____________________DishInfo____________________*/
+
+#dishInfo img {
+	border: 1px solid grey;
+    width: 50%;
+    height: auto;
+	
+
+}
+#dishInfo text {
+	float: left;
+}
+#preparations{
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	float:left;
+	padding:30px;
+}
+#preparations h4 {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	margin:0px;
+	padding:0px;
+}
+
+
+
+
+#printRecipe {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 20px;
+	background-color: orange;
+	border: 1px solid black;
+	border-radius: 4px;
+	color: black;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+
+/* dishView - ingredients */
+
+#dishView h1 {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	font-size: 20px;
+	color: black;
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+#dishView img {
+    width: 60%;
+    height: auto;
+    float: center;
+    margin-left: 20px;
+
+}
+#dishView text {
+
+	float: left;
+	margin: 20px 0px 0px 20px;
+
+}
+
+
+/*Ingredients*/
+#ingredients li {
+	list-style-type: decimal;
+}
+
+#left {
+	display: inline-block;
+	float: left;
+}
+
+#center {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#right {
+	display: inline-block;
+	float: right;
+}
+
+#ingredients hr {
+	height: 1px;
+	color: #123455;
+	background-color: #123455;
+	border: none;
+	width: 95%;
+
+}
+
+#hrBelow hr {
+	height: 1px;
+	color: #123455;
+	background-color: #123455;
+	border: none;
+	width: 95%;
+	margin-top: 20px;
+}
+
+#ingredients text {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+	float: right;
+	margin-right: 20px;
+}
+#dinnerMenu hr{
+	height: 10px;
+	width: 1px;
+}
+#dinnerPrice h4 {
+	color: #A52A2A;
+}
+.vl {
+	border-left: 2px solid black;
+	height: 20vh;
+	padding:10px;
+	margin-top: 20px;
+}
+
+text {
+	font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+}

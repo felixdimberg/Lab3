@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinner planner</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+
+          <!-- ________________Header______________ -->
+
+      		<div id="header" class="col-md-12-fluid">
+      			<h1>Dinner planner</h1>
+      		</div>
+
+          <!-- _______________FirstText_______________ -->
+
+      		<div id="firstText" class="col-md-6 col-md-offset-3">
+      			<h2>
+      			Lorem ipsum dolor sit amnet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation illamco laboris nisi ut aliquip ex ea commodo consequat
+            </h2>
+      		  <button id="createNewDinnerBtn" type="button" class="btn center-block">Create new dinner</button>
+          </div>
+
+          <!-- ______________SidebarView____________ -->
+
+          <div id="sidebarView" class="col-md-2"> 
+            <h2>My Dinner</h2>     
+            <text> People: <input id="numberOfGuests" type="number" value="1" min="1" max="100"></text>
+            <table>
+              <thead>
+                <tr>
+                  <td>Dish name</td>
+                  <td>Cost</td>
+                </tr>
+              </thead>
+            </table>
+            <div id="pendingMenu" class="col-md-11"></div>
+            <div class="col-md-11" id="pendingPrice">
+              <div class="col-md-9" id="SEK">SEK</div>
+              <div class="col-md-3" id="totalCost"></div>
+            </div>
+            <button id="confirmMenuBtn" class="confirmbtn">Confirm Dinner</button>
+          </div>
+
+          <!-- _______________FindDish______________ -->
+
+          <div id="findDish" class="col-md-10">
+            <h2>Find a dish:</h2>
+            <input id="dishSearch" value="" type="text" placeholder="Enter key words">
+            <select id="typeSelect">
+              <option value="all" selected="selected">All</option>
+              <option value="starter">Appetizers</option>
+              <option value="main dish">Main Courses</option>
+              <option value="dessert">Desserts</option>
+              <option value="bread">Breads</option>
+              <option value="sauce">Sauces</option>
+              <option value="drink">Drinks</option>
+            </select>
+            <button id="searchButton">Search</button>
+          </div>
+    
+          <!-- _______________ChooseDish_______________ -->
+
+          <div id="chooseDish" class="col-md-10">
+            <div class="grid" id="row2">
+              <span id="dishes"></span>
+            </div>      
+          </div>
+
+          <!-- ________________DishView_________________ -->
+
+          <div id="dishView" class="col-md-9">     
+            <div class="row">           
+            <div id="dish" class="col-md-5">
+              <span id="dishInfo"></span>
+              <a id="backBtn"> Back to search </a>
+            </div>
+            <div id="ingredients" class="col-md-5">
+              <h1>Ingredients for <span id="guestCount"></span> people</h1>
+              <hr>
+              <div id="dishIngredients"></div>
+              <div id="hrBelow"><hr></div>
+              <text>SEK <span id="totalPrice"></span></text>
+              <button id="addtoMenubtn" class="addtoMenubtn">Add to menu</button>
+            </div>
+            </div>
+          </div>
+
+          <!-- _______________MyDinnerPeople_________________ -->
+
+          <div id="myDinnerPeople" class="col-md-12">
+            <text>My dinner: <span id="guestCount"></span> people</text>
+            <a id="backBtn">Go back and edit dinner </a>
+          </div>
+
+          <!-- _________________DinnerView_________________ -->
+
+          <div id="dinnerView">
+            <span id="dinnerMenu"></span>
+            <span id="dinnerPrice"></span>
+            <hr>
+            <button id="printRecipe" class="btn center-block">Print Full Recipe</button>
+          </div>
+
+          <!-- ________________DinnerInfo__________________ -->
+
+          <div id="dinnerInfo" class="col-md-12">
+              <div id="dishInfo"></div>
+          </div>
+
+
+        </div>
+      </div> 
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <!--Masonry-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script> 
+      $('.grid').masonry({
+       itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+        columnWidth: '.grid-sizer',
+       percentPosition: true
+      });
+    </script>
+
+  	<!-- The application JavaScript code -->
+  	<script src="js/app.js"></script>
+    <script src="js/model/dinnerModel.js"></script>
+    <script src="js/view/firstTextView.js"></script>
+    <script src="js/view/sidebarView.js"></script>
+    <script src="js/view/dinnerView.js"></script>
+    <script src="js/view/dishView.js"></script>
+    <script src="js/view/dinnerInfoView.js"></script>
+    <script src="js/view/findDishView.js"></script>
+    <script src="js/view/myDinnerPeopleView.js"></script>
+    <script src="js/view/chooseDishView.js"></script>
+    <script src="js/controller/firstTextController.js"></script>
+    <script src="js/controller/sidebarController.js"></script>
+    <script src="js/controller/dinnerController.js"></script>
+    <script src="js/controller/myDinnerPeopleController.js"></script>
+    <script src="js/controller/chooseDishController.js"></script>
+    <script src="js/controller/dishController.js"></script>
+    <script src="js/controller/findDishController.js"></script>
+
+  
+  </body>
+</html>
